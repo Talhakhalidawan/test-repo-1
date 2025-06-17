@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talha Khalid | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <script src="static/js/lenis.js"></script>
+    <script>
+    const lenis = new Lenis({ duration: 2, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+    </script>
+
+    <!-- Styles -->
+    <style>
+.font-mochiy-pop {
+    font-family: "Mochiy Pop P One", sans-serif;
+}
+
+.font-alegreya-sans {
+    font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.fw-bolder {
+    font-weight: 900;
+}
+
+.text-center {
+    text-align: center;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden !important;
+
+    user-select: none;
+}
+
+body {
+    background-color: rgb(0, 0, 26);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.heros-container {
+    display: flex;
+    flex-direction: column;
+    height: 250vh;
+    position: relative;
+}
+
+/* hero section */
+
+.hero-section {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgb(0, 0, 26);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: clamp(.8rem, 2vw, 1.5rem);
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    margin-bottom: 10px;
+}
+
+.hero-name {
+    font-size: clamp(2rem, 10vw, 4rem);
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.hero-subtitle {
+    font-size: clamp(.8rem, 2vw, 1.5rem);
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    font-weight: 700;
+    line-height: 1;
+}
+
+/* Who I am */
+
+.who-im-section {
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgb(0, 0, 26);
+    /* backdrop-filter: blur(100px); */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+}
+
+.who-im-content {
+    margin-bottom: clamp(3rem, 2vw, 8rem);
+    margin-inline: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.who-Im-img {
+    background-image: url("../images & svgs/who-im.svg");
+    background-repeat: no-repeat;
+    background-size: 28vh;
+    
+    background-position: 50% 38%;
+
+    transform: scale(1.25);
+
+    background-origin: content-box; 
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.who-im-desc::after {
+    content: "A developer who engineers scalable systems without ever sacrificing aesthetic detail";
+
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: clamp(1.3rem, 2vw, 2rem);
+    font-weight: 700;
+    text-align: center;
+
+    max-width: clamp(90%, 50vw, 70%);
+    width: clamp(90%, 50vw, 70%);
+    height: calc(100vh - 5rem);
+
+    padding-inline: 2rem;
+    box-sizing: border-box;
+
+    position: fixed;
+    top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 10;
+
+    opacity: 1;
+}
+
+
+/* Other website conent */
+
+
+/* .about-container {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("https://creativelifestorywork.com/wp-content/uploads/2022/08/creative-life-story-work-all-about-me.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: inset 0 100px 300px 1rem rgba(0, 0, 0, 0.5);
+
+    z-index: 11;
+
+    animation: about-animation linear;
+    animation-timeline: view(0% 0%);
+}
+
+@keyframes about-animation {
+    0% {
+        border-radius: 100px;
+        margin-inline: 5rem;
+        width: auto;
+    }
+    30% {
+        border-radius: 100px;
+        margin-inline: 5rem;
+        width: auto;
+    }
+    40% {
+        border-radius: 0px;
+        margin-inline: 0rem;
+        width: 100%;
+    }
+    100% {
+        border-radius: 0;
+        margin-inline: 0;
+        width: 100%;
+    }
+} */
+
+.test-div {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffd500;
+    z-index: 99;
+
+    /* — add duration & fill-mode — */
+    animation: test-animation;
+    animation-timeline: view();
+}
+
+@keyframes test-animation {
+    0%   { background-color: #fff; }
+    100% { background-color: #ff00d4; }
+}
+    </style>
+
+    <!-- Animations -->
+    <style>
+.hero-content {
+    position: fixed;
+    opacity: 0;
+    scale: 1.3;
+    animation: hero-scroll linear both;
+    animation-timeline: view(0% 50%);
+}
+
+@keyframes hero-scroll {
+    0% {
+        opacity: 1;
+        scale: 1.3;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        scale: 1;
+    }
+}
+
+.who-im-section {
+    position: fixed;
+
+    animation: main-logo-animation;
+    animation-timeline: view(0% 50%);
+}
+
+@keyframes main-logo-animation {
+    0% {
+        opacity: 0;
+        scale: 1.25;
+        background-size: 500vh;
+    }
+    70% {
+        opacity: 0;
+        scale: 1.25;
+        background-size: 500vh;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+        background-size: 28vh;
+    }
+}
+
+
+.who-im-desc::after {
+    animation: text-animation;
+    animation-timeline: view(auto 40%);
+}
+@keyframes text-animation {
+    0% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* @keyframes color-changing {
+    0% {
+        background-color: rgb(247, 0, 255);
+    }
+    50% {
+        background-color: white;
+    }
+    100% {
+        background-color: rgb(255, 0, 251);
+    }
+} */
+    </style>
+</head>
+<body>
+
+    <div class="heros-container">
+
+        <div class="hero-section">
+            <div class="hero-content">
+                <h5 class="hero-title">Hi, It's</h5>
+                <h1 class="hero-name font-mochiy-pop fw-bolder">Talha Khalid</h1>
+                <h3 class="hero-subtitle font-alegreya-sans text-center">DEVELOPER - DESIGNER - CODER - CREATOR</h3>
+            </div>
+        </div>
+        
+        <div class="who-im-section who-Im-img who-im-desc">
+        </div>
+
+    </div>
+
+    <div class="test-div"></div>
+
+    <!-- <div class="about-container">
+
+    </div> -->
+
+    <div style="height: 100vh;" class=""></div>
+    
+</body>
+</html>

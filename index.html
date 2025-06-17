@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <script src="static/js/lenis.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+    <script>
+        const lenis = new Lenis({ duration: 2, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+    </script>
+
+    <script>
+        
+    </script>
+
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-logo">
+                <img src="static/images & svgs/logo.png" alt="">
+            </div>
+            <div class="navbar-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="navbar-toggle">
+                <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="70" height="70"/><rect y="7" width="70" height="21" fill="white"/><rect y="44" width="70" height="20" fill="white"/></svg>
+                <svg class="close-icon" style="display: none;" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.424637" y="0.424622" width="70" height="70"/><path d="M55.5592 70.4084L0.424622 15.2739V0.424623H15.2739L70.4084 55.5592L70.4084 70.4084L55.5592 70.4084Z" fill="white"/><path d="M0.495977 55.5668L56.2924 0.3516L70.3603 0.3516L70.3603 14.5676L13.9246 70.4246L0.495977 70.4246L0.495977 55.5668Z" fill="white"/></svg>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h5 class="hero-title">Hi, It's</h5>
+            <h1 class="hero-name font-mochiy-pop fw-bolder">Talha Khalid</h1>
+            <h3 class="hero-subtitle font-alegreya-sans text-center">DEVELOPER - DESIGNER - CODER - CREATOR</h3>
+        </div>
+
+        <div class="hero-social-links">
+            <div class="hero-social-links-text">Get In Touch</div>
+            <div class="links">
+                <a href="">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="mail-link">
+            <a href="mailto:talhakhalidlkp@gmail.com">talhakhalidlkp@gmail.com</a>
+        </div>
+    </div>
+
+    <div class="hero-secondary">
+        <div class="hero-secondary-content">
+            <div class="who-im-img">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="other-content">
+        
+        <div class="about-me">
+            <div class="section-title">
+                About
+            </div>
+            <div class="about-content">
+
+                <div class="about-header">
+                    <div class="about-header-img autoShow">
+                        <img src="static/images & svgs/me.png" alt="">
+                    </div>
+                    <div class="about-header-desc autoShow">
+                        <h3 class="font-mochiy-pop">Talha Khalid</h3>
+                        <h4 class="font-alegreya-sans">Software Engineer</h4>
+                    </div>
+                </div>
+
+                <div class="about-desc">
+                    <h3 class="font-calibre autoShow">About Me</h3>
+                    <p class="font-calibre autoShow">Hi, I'm <span class="text-green">Talha Khalid</span>, a self-taught full-stack developer with a focus on building, testing, debugging, and deploying web applications. I'm passionate about learning new technologies and creating practical, impactful solutions that solve real-world problems through code.</p>
+                    <h3 class="font-calibre autoShow">My Skills</h3>
+                    <p class="font-calibre autoShow">I have a strong foundation in <a href="https://en.wikipedia.org/wiki/Python" target="_blank" class="text-green td-none">Python</a>, <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="text-green td-none">JavaScript</a>, <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" class="text-green td-none">HTML</a>, <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" class="text-green td-none">CSS</a>, and <a href="https://en.wikipedia.org/wiki/SQL" target="_blank" class="text-green td-none">SQL</a>, also experienced with <a href="https://en.wikipedia.org/wiki/React_(software)" target="_blank" class="text-green td-none">React</a>, <a href="https://en.wikipedia.org/wiki/React_Native" target="_blank" class="text-green td-none">React Native</a>, <a href="https://en.wikipedia.org/wiki/Dart_(programming_language)" target="_blank" class="text-green td-none">Dart</a>, <a href="https://en.wikipedia.org/wiki/Flutter_(software)" target="_blank" class="text-green td-none">Flutter</a> and <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" class="text-green td-none">PHP</a>.</p>
+                    <h3 class="font-calibre autoShow">My Journey</h3>
+                    <p class="font-calibre autoShow">
+                        <span class="text-green">2006 - 2020</span> Born and raised in Punjab, Pakistan. <br>
+                        <span class="text-green">2020 - 2022</span> Completed matriculation. <br>
+                        <span class="text-green">2022 </span> After matriculation, I started my journey as a <a href="https://trainingexpress.org.uk/what-is-the-difference-between-self-taught-and-degree-programmers-nowadays/" target="_blank" class="text-green td-none">self taught developer</a>. I learned Python and then I jumped in the occean of web development. <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="experience">
+            <section class="experience-section">
+                <div class="experience-title section-title text-center">Work Experience</div>
+
+                <div class="experiences-container">
+                    <input type="radio" name="exp-slide" id="exp1" class="exp-card-input" checked>
+                    <label for="exp1" class="exp-card">
+                        <div class="exp-card-header">
+                            <div class="exp-card-title">
+                                <h3 class="font-mochiy-pop">Junior Software Engineer</h3>
+                                <a href="https://itvisionsolutions.com/" target="_blank" class="td-none">@IT VISION SOLUTIONS</a>
+                            </div>
+                        </div>
+                        <div class="exp-card-content">
+                            <p class="exp-card-duration">November 2023 - January 2024</p>
+                            <ul class="exp-card-desc">
+                                <li>Developed mobile applications using Kivy and later transitioned to React Native for cross-platform development.</li>
+                                <li>Created user interfaces for Windows applications using Tkinter, enhancing user experience.</li>
+                                <li>Collaborated with team members to deliver projects in a fast-paced environment, meeting tight deadlines.</li>
+                                <li>Enhanced problem-solving skills by addressing real-world challenges and debugging complex issues.</li>
+                            </ul>
+                        </div>
+                    </label>
+                    
+                    <input type="radio" name="exp-slide" id="exp2" class="exp-card-input">
+                    <label for="exp2" class="exp-card">
+                        <div class="exp-card-header">
+                            <div class="exp-card-title">
+                                <h3 class="font-mochiy-pop">Freelancing</h3>
+                                <p>@Freelance Software Developer</p>
+                            </div>
+                        </div>
+                        <div class="exp-card-content">
+                            <p class="exp-card-duration">January 2024 - Present</p>
+                            <ul class="exp-card-desc">
+                                <li>Collaborated with clients to gather requirements and provide tailored software solutions.</li>
+                                <li>Delivered custom web and mobile applications using technologies such as Django, Flask, and React Native.</li>
+                                <li>Managed project timelines and communicated effectively to ensure client satisfaction.</li>
+                                <li>Continuously learned and adapted to new technologies to meet diverse client needs.</li>
+                            </ul>
+                        </div>
+                    </label>
+                    
+                    <input type="radio" name="exp-slide" id="exp3" class="exp-card-input">
+                    <label for="exp3" class="exp-card">
+                        <div class="exp-card-header">
+                            <div class="exp-card-title">
+                                <h3 class="font-mochiy-pop">Vibe Coding</h3>
+                                <p>@AI Developer</p>
+                            </div>
+                        </div>
+                        <div class="exp-card-content">
+                            <p class="exp-card-duration">Ongoing</p>
+                            <ul class="exp-card-desc">
+                                <li>Skilled in working with AI technologies and proficient in prompt engineering.</li>
+                                <li>Experienced in creating end to end applications using AI.</li>
+                                <li>Able to work effectively with new technologies, including unfamiliar programming languages and frameworks with the help of AI.</li>
+                            </ul>
+                        </div>
+                    </label>
+                </div>
+            </section>
+        </div>
+
+        <div class="services-parent">
+            <section class="services-section">
+                <!-- <div class="section-title services-title">
+                    Our Services
+                </div> -->
+                <div class="services ff-serif">
+                    <h1 class="service text-green">Our Services</h1>
+                    <h1 class="service">Web Development</h1>
+                    <h1 class="service">SEO</h1>
+                    <h1 class="service">App Development</h1>
+                    <h1 class="service">UI/UX Design</h1>
+                    <h1 class="service">Desktop Development</h1>
+                    <h1 class="service">Ads</h1>
+                    <h1 class="service">GFX Design</h1>
+                    <h1 class="service">Get In Touch</h1>
+                </div>
+            </section>
+        </div>
+<!-- 
+        <style>
+            .projects {
+                height: 200vh;
+                width: 100vw;
+            }
+            .projects-section {
+                height: 100vh;
+                width: 100vw;
+                top: 0;
+
+                position: sticky;
+            }
+
+            .project {
+                box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.3);
+                background-color: #ffffff09;
+
+                width: 100%;
+                max-width: 270px;
+
+                height: 400px;
+
+                padding: 10px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .project-header {
+                display: flex;
+                justify-content: space-between;
+
+                width: 100%;
+                color: white;
+            }
+            .icons {
+                color: white;
+                font-size: 1rem;
+            }
+        </style>
+
+        <div class="projects">
+
+            <section class="projects-section">
+
+                <div class="project">
+                    <div class="project-header">
+                        <div class="ph-title">English-Learning App</div>
+                        <div class="icons">
+                            <i class="bi bi-file"></i>
+                            <i class="bi bi-github"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="desc">An interactive mobile application that uses AI generated quizzes and pronunciation guides for learners.</p>
+                    </div>
+                    <div class="tech-stack"><span>Javascript</span> <span>React Native</span></div>
+                </div>
+
+            </section>
+
+        </div>
+ -->
+
+        <style>
+            
+/* Projects Section */
+.projects-section {
+    padding: 0 5rem;
+    margin: 1rem auto 0;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+@media (min-width: 770px) {
+    .projects-section {
+        max-width: 90%;
+    }
+}
+
+.projects-data {
+    width: 100%;
+}
+
+.projects-grid {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 1.5rem;
+    gap: 30px;
+    width: 100%;
+    cursor: grab;
+    padding-left: 1px; /* Ensures no partial cards are shown */
+    
+    /* Hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    
+    /* Add springy effect */
+    -webkit-overflow-scrolling: touch;
+}
+
+.projects-grid:active {
+    cursor: grabbing;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.projects-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.project-card {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    min-width: 300px;
+    max-width: 300px;
+    height: 400px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.project-folder i {
+    color: var(--green, #64ffda);
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+}
+
+.project-links a {
+    color: var(--light-slate, #a8b2d1);
+    margin-left: 10px;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    transition: color 0.2s ease;
+}
+
+.external-link:hover {
+    color: var(--green, #64ffda);
+}
+
+.project-title {
+    margin: 0 0 10px;
+    color: var(--lightest-slate, #ccd6f6);
+    font-size: clamp(18px, 2.5vw, 22px);
+    font-weight: 600;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-description {
+    color: var(--light-slate, #8892b0);
+    font-size: clamp(14px, 1.8vw, 16px);
+    flex-grow: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    margin-bottom: 15px;
+}
+
+.project-tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.project-tech-list li {
+    font-family: var(--font-mono, monospace);
+    font-size: clamp(11px, 1.2vw, 13px);
+    color: var(--green, #64ffda);
+    margin-right: 10px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+.project-tech-list li:last-of-type {
+    margin-right: 0;
+}
+
+/* Add JavaScript for horizontal scroll on desktop */
+.projects-grid-scroll-js {
+    position: relative;
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 0 2rem;
+    }
+    
+    .project-card {
+        min-width: 280px;
+        max-width: 280px;
+        height: 380px;
+    }
+    
+    .project-content {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-section {
+        padding: 0 1.5rem;
+    }
+    
+    .project-card {
+        min-width: 260px;
+        max-width: 260px;
+        height: 360px;
+    }
+    
+    .project-content {
+        padding: 1rem;
+    }
+    
+    .project-title {
+        font-size: 18px;
+    }
+}
+        </style>
+        
+        <div class="projects-section my-16" id="projects">
+            <div class="projects-data">
+                <div class="section-title my-5">
+                    <h2 class="sec-title">Projects</h2>
+                </div>
+                
+                <div class="projects-grid projects-grid-scroll-js">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div class="project-folder">
+                                    <i class="bi bi-folder2"></i>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/Talhakhalidawan/LingoQuest" target="_blank" class="external-link" aria-label="External Link">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <h3 class="project-title">English-Learning App</h3>
+                            
+                            <div class="project-description">
+                                <p>An interactive mobile application that uses AI generated quizzes and pronunciation guides for learners.</p>
+                            </div>
+                            
+                            <ul class="project-tech-list">
+                                <li>Javascript</li>
+                                <li>React Native</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div class="project-folder">
+                                    <i class="bi bi-folder2"></i>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/Talhakhalidawan/Real-Time-Aerial-Object-Detector" target="_blank" class="external-link" aria-label="External Link">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <h3 class="project-title">Real-Time Aerial-Object Detector</h3>
+                            
+                            <div class="project-description">
+                                <p>A live and recorded video detection system leveraging a YOLO model to identify and track flying objects like airplanes and drones in real time.</p>
+                            </div>
+                            
+                            <ul class="project-tech-list">
+                                <li>Python</li>
+                                <li>OpenCV</li>
+                                <li>PyTorch</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div class="project-folder">
+                                    <i class="bi bi-folder2"></i>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/Talhakhalidawan/Gatherhub" target="_blank" class="external-link" aria-label="External Link">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <h3 class="project-title">Social Media App</h3>
+                            
+                            <div class="project-description">
+                                <p>A full featured social networking platform allowing users to register, create profiles, post updates, comment, and chat.</p>
+                            </div>
+                            
+                            <ul class="project-tech-list">
+                                <li>Python</li>
+                                <li>Django</li>
+                                <li>HTML/CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4 (DevSnippets) -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div class="project-folder">
+                                    <i class="bi bi-folder2"></i>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://devsnippets.awesomesolutions.tech/" target="_blank" class="external-link" aria-label="External Link">
+                                        <svg stroke="#a8b2d1" fill="#a8b2d1" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"></path></svg>
+                                    </a>
+                                    <a href="https://github.com/Talhakhalidawan/DevSnippets" target="_blank" class="external-link" aria-label="External Link">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <h3 class="project-title">DevSnippets</h3>
+                            
+                            <div class="project-description">
+                                <p>A fully static web application that lets users search and browse code snippets with instant filtering and detail views all without any backend.</p>
+                            </div>
+                            
+                            <ul class="project-tech-list">
+                                <li>JavaScript</li>
+                                <li>HTML/CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script>
+// Mouse drag scrolling for project cards on desktop
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.projects-grid');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2; // Scroll speed
+        slider.scrollLeft = scrollLeft - walk;
+    });
+});
+</script>
+
+    </div>
+</body>
+<script>
+// Navbar toggle logic
+const navbarToggle = document.querySelector('.navbar-toggle');
+const navbarLinks = document.querySelector('.navbar-links');
+const openIcon = navbarToggle.querySelector('svg:not(.close-icon)');
+const closeIcon = navbarToggle.querySelector('.close-icon');
+const body = document.querySelector('body');
+
+// Helper to add pop animation
+function popIcon(icon) {
+    icon.classList.remove('pop-animate');
+    void icon.offsetWidth; // trigger reflow
+    icon.classList.add('pop-animate');
+}
+
+// Toggle navbar on button click
+navbarToggle.addEventListener('click', () => {
+    const isOpen = navbarLinks.classList.toggle('navbar-links-open');
+    
+    if (isOpen) {
+        // Show close icon with animation
+        openIcon.style.display = 'none';
+        closeIcon.style.display = 'block';
+        popIcon(closeIcon);
+        
+        // Prevent scrolling on mobile
+        if (window.innerWidth <= 600) {
+            body.classList.add('no-scroll');
+        }
+    } else {
+        // Show menu icon with animation
+        closeIcon.style.display = 'none';
+        openIcon.style.display = 'block';
+        popIcon(openIcon);
+        
+        // Allow scrolling again
+        body.classList.remove('no-scroll');
+    }
+});
+
+// Close menu when a link is clicked
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        if (navbarLinks.classList.contains('navbar-links-open')) {
+            navbarLinks.classList.remove('navbar-links-open');
+            closeIcon.style.display = 'none';
+            openIcon.style.display = 'block';
+            popIcon(openIcon);
+            body.classList.remove('no-scroll');
+        }
+    });
+});
+
+// Handle window resize
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 600) {
+        // Reset mobile-specific styles when switching to desktop
+        body.classList.remove('no-scroll');
+    }
+});
+</script>
+</html>
